@@ -9,7 +9,7 @@ fetch("https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=Fullmetal&gen
 })
 .then(response => response.json())
 .then(data => {
-    console.log(data); // Ver datos en consola para depuración
+    console.log(data); 
 
     data.data.forEach(anime => {
         const col = document.createElement("div");
